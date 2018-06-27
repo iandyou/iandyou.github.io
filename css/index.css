@@ -1,6 +1,15 @@
 body{
 	font-size:small;
 }
+#container{
+	width:80%;
+	margin-left:10%;
+	
+}
+header{
+	background-color:#DCDCDC;
+	height:80px;
+}
 li span{
 	font-size:4em;
 }
@@ -16,13 +25,14 @@ header a{
 	color:black;
 	
 }
-a:link{
-	color:black;
-}
-a:visited{
-	
-}
-a:focus{
+article{
+	width:40%;
+	border:1px solid green;
+	margin:5px;
+	margin-left:0px;
+	float:left;
+	position:relative;
+	height:300px;
 	
 }
 a:hover{
@@ -32,35 +42,22 @@ a:hover{
 }
 
 header ul{
-	background-color:#DCDCDC;
+	//background-color:#DCDCDC;
 	//margin-left:40%;
 }
-footer{
-	text-align:center;
-	margin-bottom:0px;
-	
-}
-#main{
-	height:400px;
-}
-#container{
-	width:1000px;
-	margin-left:150px;;
-	//border:1px solid green;
-}
+
+
+
 .book-name{
 	font-size:1.5em;
 	margin-left:4px;
 	margin-top:5px;
+	background-color:#DCDCDC;
+	width:40%;
+	overflow:auto;
 	
 }
-article{
-	width:80%;
-	border:1px solid green;
-	margin:5px;
-	margin-left:0px;
-	margin-right:200px;
-}
+
 article a{
 	text-decoration:none;
 	font-size:1.2em;
@@ -75,9 +72,32 @@ article nav{
 	margin:2px;
 	
 }
-section{
-	width:19%;
+aside{
+	width:18%;
 	float:right;
 	border:1px solid green;
+	margin-top:5px;
+	padding:0px;
+	
+	
+}
+.links{
+	padding:1px;
+	margin-top:2px;
+	font-size:1.5em;
+	margin-bottom:2px;
+	word-spacing:6px;
+}
+blockquote{
+	padding:2px;
+	margin-left:2px;
+	margin-right:2px;
+	margin-top:2px;
+}
+footer{
+	height:60px;
+	background-color:#DCDCDC;
+	clear:both;
+	text-align:center;
 	
 }
