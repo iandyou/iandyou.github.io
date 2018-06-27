@@ -1,3 +1,9 @@
+body{
+	font-size:small;
+}
+li span{
+	font-size:4em;
+}
 li{
 	display:inline;
 	margin:20px;
@@ -6,4 +12,32 @@ li{
 a{
 	text-decoration:none;
 	font-size:2em;
+	color:black;
+}
+a:link{
+	color:black;
+}
+a:visited{
+	
+}
+a:focus{
+	
+}
+a:hover{
+	background-color:#696969;
+	color: 	white;
+
+}
+
+ul,footer{
+	background-color:#DCDCDC;
+	//margin-left:40%;
+}
+footer{
+	text-align:center;
+	margin-bottom:0px;
+	clear:both;
+}
+#main{
+	height:400px;
 }
