@@ -1,7 +1,7 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
-   <title>Welcome to HMTL My Page</title>
+   <title>Welcome to  My Page</title>
    <meta charset="utf-8" />
    <link rel="stylesheet" href="../css/index.css" />
    <link rel="stylesheet" href="../css/note.css" />
@@ -30,13 +30,57 @@
 	  <p>ECMAJavascript中的函数是对象，它有自己的属性和方法。</P>
 	  <p>属性：</p>
 	  <ul>
-	     <li>length</li>
-		 <li>prototype</li>
+	     <li>length:表示函数希望接收的命名参数的个数。如下例子所示：<br />
+		   <pre>
+		      function sayName(name){
+			    alert(name);
+			  }
+			  function sum(num1,num2){
+			    return num1+num2;
+			  }
+			  function sayHi(){
+			    alert("hi");
+			  }
+			  alert(sayName.length);//1
+			  alert(sum.length);//2
+			  alert(sayHi.length);//0
+		   </pre>
+		 </li>
+		 <li>prototype:对于ECMAJscript中引用而言，<code>prototype</code>是保存它们所有实例方法的真正所在。
+		     在ECMAJscript5中，prototype属性是不可枚举的，因此使用<code>for-in</code>无法发现。
+		 </li>
 	  </ul>
 	  <p>方法：</p>
 	  <ul>
-	  
+	     <li><code>apply()</code></li>
+		 <li><code>call()</code></li>
 	  </ul>
+	  <p>这两个方法的用途都是在特定的作用域中调用函数，实际上等于设置函数体内this对象的值。
+	    首先，<code>apply()</code>方法接收两个参数：一个是在其中运行函数的作用域，另一个是参数数组。其中，
+		第二个参数可以是<code>Array</code>的实例，也可以是<code>arguments</code>对象。例如： 
+	  </p>
+	  <p>
+	    <pre>
+		  function sum(num1,num2){
+				return num1+num2;
+		  }
+		  function callSum(num1,num2){
+				return sum.apply(this,arguments);//传入arguments对象
+		  }
+		  function callSum2(num1,num2){
+				return sum.apply(this,[num1,num2]);//传入数组
+		  }
+		  alert(callSum(10,10));//20
+		  alert(callSum2(10,10));//20
+		</pre>
+	  </p>
+	  <p><code>call()</code>方法与<code>apply()</code>方法的作用相同，它们的区别仅在于接收参数的方式不同。如：<br />
+			<pre>
+				function callSum(num1,num2){
+					return sum.call(this,num1,num2);
+				}
+			</pre>
+	  </p>
       
    </article>
    
