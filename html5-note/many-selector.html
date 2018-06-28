@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <title>Welcome to  My Page</title>
+   <meta charset="utf-8" />
+   <link rel="stylesheet" href="../css/index.css" />
+   <link rel="stylesheet" href="../css/note.css" />
+   
+</head>
+
+<body>
+ 
+   <header>
+	   <nav>
+		  <ul>
+		     <li><span>I And You</span></li>
+			
+			 <li><a href="../index.html">HOME</a></li>
+			 <li><a href="../html5.html">HTML5</a></li>
+			 <li><a href="../css.html">CSS</a></li>
+			 <li><a href="../javascript.html">JavaScript</a></li>
+			 <li><a href="../php.html">PHP</a></li>
+		  </ul>
+	   </nav>
+   </header>
+  
+  <main>
+   <article>
+      <h2>组合使用选择器</h2>
+	  <p><em>注意：</em>只在必要情况下组合使用选择器，并且，最好将特殊性控制在刚好的需要的程序。以下是一个比较复杂且
+	  不一定必要的组合使用选择器的例子:</P>
+	  <p><pre>
+	       .project h2[lang|="es"]+p em{
+		      color:red;
+		   }
+	     </pre>
+	  </p>
+	  <p>分析：从右向左看，它表明“仅选择<code>em</code>元素，它们包含在<code>p</code>元素中，这样的<code>p</code>元素
+	  是<code>lang</code>属性值以<code>es</code>开头的<code>h2</code>元素的直接相邻同胞元素
+	  ，且是class等于project的任何元素的子元素”</p>
+	  <p>提示：除非需要更高的特殊性，否则越简单越好。如以上选择器仅仅是想让<code>em</code>元素显示为红色，完全可以用
+		<code>em{color:red;}</code>或<code>.project em{color:red;}来代替复杂的组合选择。</code>
+	  </p>
+	  
+   </article>
+  </main>
+   
+   <footer>
+   
+   </footer>
+ 
+</body>
+</html>
