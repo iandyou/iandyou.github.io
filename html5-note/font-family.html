@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <title>Welcome to  My Page</title>
+   <meta charset="utf-8" />
+   <link rel="stylesheet" href="../css/index.css" />
+   <link rel="stylesheet" href="../css/note.css" />
+   
+</head>
+
+<body>
+ 
+   <header>
+	   <nav>
+		  <ul>
+		     <li><span>I And You</span></li>
+			
+			 <li><a href="../index.html">HOME</a></li>
+			 <li><a href="../html5.html">HTML5</a></li>
+			 <li><a href="../css.html">CSS</a></li>
+			 <li><a href="../javascript.html">JavaScript</a></li>
+			 <li><a href="../php.html">PHP</a></li>
+		  </ul>
+	   </nav>
+   </header>
+  
+  <main>
+   <article>
+      <h2>选择、指定替代字体</h2>
+	  <p><em>说明：</em>font-family是继承属性，它可被继承同时也可以被覆盖</P>
+	  <p><pre>
+	       body{
+		      font-family:Geneva;
+		   }
+		   h1,h2{
+		      <mark>font-family:"Gill Sans";</mark>
+		   }
+	     </pre>
+	  </p>
+	  <p> h1和h2因为覆盖的原因会用“Gill Sans”字体，但如果用户的电脑里没有“Gill Sans”，它们还将会使用“Geneva”。
+		   上面的例子中，body的<code>font-family</code>的属性值没用引号包围。如果属性值有多个单词，就得用引号包围。
+		   虽然<code>font-family</code>属性是继承的，但有几个元素不会继承父元素的字体设置，其中有表单的select、textarea、input。
+		   通过<code> input,select,textarea{font-family:inherit}</code>可以强制它们继承父元素的字体设置。
+	  </p>
+	  <p>字体列表称为<dfn>字体栈</dfn>。通常字体栈至少包含三个字体：希望使用的字体、一个或几个替代字体，以及一个表示类属的标准字体，表示
+	     “如果其他的字体都不可用，就用这个”。
+	  </p>
+	  
+	  
+   </article>
+  </main>
+   
+   <footer>
+   
+   </footer>
+ 
+</body>
+</html>
